@@ -76,6 +76,24 @@
         android:gravity="center|left"
         android:onClick="WinterRecord"
         android:text="Record-Inverno" />
+    <Button
+        android:id="@+id/button8"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:layout_weight="1"
+        android:gravity="center|left"
+        android:onClick="SummerRecord"
+        android:text="Record-Estate" />
+    <Button
+        android:id="@+id/button9"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:layout_weight="1"
+        android:gravity="center|left"
+        android:onClick="AutumnRecord"
+        android:text="Record-Autunno" />
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"

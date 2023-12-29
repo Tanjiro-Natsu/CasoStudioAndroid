@@ -36,4 +36,10 @@ public class MainActivity extends AppCompatActivity {
     public void WinterRecord(View v){
         startActivity(new Intent(MainActivity.this,Winter1Record.class));
     }
+    public void SummerRecord(View v){
+        startActivity(new Intent(MainActivity.this,Summer1Record.class));
+    }
+    public void AutumnRecord(View v){
+        startActivity(new Intent(MainActivity.this,Autumn1Record.class));
+    }
 }

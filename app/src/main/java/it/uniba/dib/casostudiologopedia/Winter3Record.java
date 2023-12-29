@@ -1,5 +1,6 @@
 package it.uniba.dib.casostudiologopedia;
 
+
 import android.Manifest;
 import android.content.Context;
 import android.content.Intent;
@@ -22,7 +23,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-public class Winter1Record extends AppCompatActivity {
+public class Winter3Record extends AppCompatActivity {
 
     private static final String LOG_TAG = "AudioRecordTest";
     String dateTime = new SimpleDateFormat("dd-MM-yyyy hh-mm-ss aa", Locale.getDefault()).format(new Date());
@@ -93,8 +94,8 @@ public class Winter1Record extends AppCompatActivity {
 
         ActivityCompat.requestPermissions(this, permissions, REQUEST_RECORD_AUDIO_PERMISSION);
 
-        setContentView(R.layout.winterrecord1);
-        recordButton =(Button)findViewById(R.id.record1winter);
+        setContentView(R.layout.winterecord3);
+        recordButton =(Button)findViewById(R.id.record3winter);
         recordButton.setOnClickListener(new View.OnClickListener() {
             boolean mStartRecording = true;
             public void onClick(View v) {
@@ -121,6 +122,6 @@ public class Winter1Record extends AppCompatActivity {
 
     }
     public void avanti(View v){
-        startActivity(new Intent(Winter1Record.this,Winter2Record.class));
+        startActivity(new Intent(Winter3Record.this,MainActivity.class));
     }
 }

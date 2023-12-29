@@ -26,7 +26,7 @@ public class prova extends AppCompatActivity {
     private static final int REQUEST_RECORD_AUDIO_PERMISSION = 200;
     private static String fileName = null;
 
-    private RecordButton recordButton = null;
+    private Button recordButton = null;
     private MediaRecorder recorder = null;
 
     private MediaPlayer   player = null;
@@ -83,27 +83,7 @@ public class prova extends AppCompatActivity {
         recorder = null;
     }
 
-    class RecordButton extends androidx.appcompat.widget.AppCompatButton {
-        boolean mStartRecording = true;
 
-        OnClickListener clicker = new OnClickListener() {
-            public void onClick(View v) {
-                onRecord(mStartRecording);
-                if (mStartRecording) {
-                    setText("Stop recording");
-                } else {
-                    setText("Start recording");
-                }
-                mStartRecording = !mStartRecording;
-            }
-        };
-
-        public RecordButton(Context ctx) {
-            super(ctx);
-            setText("Start recording");
-            setOnClickListener(clicker);
-        }
-    }
 
 
     @Override
@@ -117,8 +97,19 @@ public class prova extends AppCompatActivity {
         ActivityCompat.requestPermissions(this, permissions, REQUEST_RECORD_AUDIO_PERMISSION);
 
         setContentView(R.layout.activity_main);
-        recordButton = new RecordButton(this);
-        recordButton.findViewById(R.id.record1winter);
+        recordButton =(Button)findViewById(R.id.button7);
+        recordButton.setOnClickListener(new View.OnClickListener() {
+            boolean mStartRecording = true;
+            public void onClick(View v) {
+                onRecord(mStartRecording);
+                if (mStartRecording) {
+                    recordButton.setText("Stop recording");
+                } else {
+                    recordButton.setText("Start recording");
+                }
+                mStartRecording = !mStartRecording;
+            }
+        });
     }
 
 

@@ -54,7 +54,7 @@
         android:layout_marginBottom="30dp"
         android:fontFamily="sans-serif-condensed"
         android:foregroundGravity="center_vertical|center|right"
-        android:text="Prossimo Livello >"
+        android:text="Fine"
         android:onClick="avanti"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView8"
@@ -63,7 +63,7 @@
         app:layout_constraintTop_toTopOf="@+id/imageView8" />
 
     <Button
-        android:id="@+id/record1winter"
+        android:id="@+id/record3winter"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="364dp"
         android:layout_height="100dp"
@@ -80,7 +80,7 @@
         android:layout_width="393dp"
         android:layout_height="127dp"
         android:fontFamily="sans-serif-condensed"
-        android:text="Durante l'inverno fa freddo"
+        android:text="L'inverno è la stagione del Natale"
         android:textAlignment="center"
         android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView5"
