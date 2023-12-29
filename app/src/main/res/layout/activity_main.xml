@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="7" />
+
+    <Button
+        android:id="@+id/button1"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:layout_weight="1"
+        android:gravity="center|left"
+        android:onClick="autumnword"
+        android:text="Parole-Autunno" />
+
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:layout_weight="1"
+        android:gravity="center|left"
+        android:onClick="winterword"
+        android:text="Parole-Inverno" />
+
+    <Button
+        android:id="@+id/button3"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:layout_weight="1"
+        android:gravity="center|left"
+        android:onClick="summerword"
+        android:text="Parole-Estate" />
+    <Button
+        android:id="@+id/button4"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:layout_weight="1"
+        android:gravity="center|left"
+        android:onClick="wintercolor"
+        android:text="Colori Inverno" />
+    <Button
+        android:id="@+id/button5"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:layout_weight="1"
+        android:gravity="center|left"
+        android:onClick="autumncolor"
+        android:text="Colori Autunno" />
+    <Button
+        android:id="@+id/button6"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:layout_weight="1"
+        android:gravity="center|left"
+        android:onClick="summercolor"
+        android:text="Colori Estate" />
+    <Button
+        android:id="@+id/button7"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:layout_weight="1"
+        android:gravity="center|left"
+        android:onClick="WinterRecord"
+        android:text="Record-Inverno" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="15"
+        />
+
+
+</LinearLayout>
