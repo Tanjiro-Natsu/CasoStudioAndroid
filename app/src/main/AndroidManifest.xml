@@ -25,115 +25,51 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Autum1word"
-            android:exported="true">
-        </activity>
-        <activity
-            android:name=".Autum2Word"
-            android:exported="true">
-        </activity>
-        <activity
-            android:name=".Autum3word"
-            android:exported="true">
-        </activity>
-        <activity
-            android:name=".Winte1Word"
-            android:exported="true">
-        </activity>
-        <activity
-            android:name=".Winte2Word"
-            android:exported="true">
-        </activity>
-        <activity
-            android:name=".Winte3Word"
-            android:exported="true">
-        </activity>
-        <activity
-            android:name=".Summer1Word"
-            android:exported="true">
-        </activity>
-        <activity
-            android:name=".Summer2Word"
-            android:exported="true">
-        </activity>
-        <activity
-            android:name=".Summer3Word"
-            android:exported="true">
-        </activity>
-        <activity
-            android:name=".WinterColor1"
-            android:exported="true">
-        </activity>
-        <activity
-            android:name=".WinterColor2"
-            android:exported="true">
-        </activity>
-        <activity
-            android:name=".WinterColor3"
-            android:exported="true">
-            </activity>
-        <activity
-            android:name=".SummerColor1"
-            android:exported="true">
-        </activity>
-        <activity
-            android:name=".SummerColor2"
-            android:exported="true">
-        </activity>
-        <activity
-            android:name=".SummerColor3"
-
-            android:exported="true">
-        </activity>
-        <activity
-            android:name=".AutumnColor1"
-            android:exported="true">
-        </activity>
-        <activity
-            android:name=".AutumnColor2"
-            android:exported="true">
-        </activity>
-        <activity
-            android:name=".AutumnColor3"
-            android:exported="true">
-        </activity>
-        <activity
             android:name=".Autumn1Record"
             android:exported="true">
         </activity>
-        <activity
-            android:name=".Autumn2Record"
-            android:exported="true">
-        </activity>
-        <activity
-            android:name=".Autumn3Record"
-            android:exported="true">
-        </activity>
+
         <activity
             android:name=".Summer1Record"
             android:exported="true">
         </activity>
-        <activity
-            android:name=".Summer2Record"
-            android:exported="true">
-        </activity>
-        <activity
-            android:name=".Summer3Record"
-            android:exported="true">
-        </activity>
+
         <activity
             android:name=".Winter1Record"
             android:exported="true">
         </activity>
         <activity
-            android:name=".Winter2Record"
+            android:name=".creaesercizio1"
             android:exported="true">
         </activity>
         <activity
-            android:name=".Winter3Record"
+            android:name=".SceltaImmagine"
             android:exported="true">
         </activity>
-
+        <activity
+            android:name=".sceltaiuto"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".ChooseWord"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".Estate2"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".Inverno2"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".Autunno2"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".creaesercizio2"
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>

@@ -1,41 +1,33 @@
 package it.uniba.dib.casostudiologopedia;
 
 import android.Manifest;
-import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.media.MediaPlayer;
 import android.media.MediaRecorder;
 import android.os.Bundle;
+import android.speech.tts.TextToSpeech;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
-import android.speech.tts.TextToSpeech;
-import android.util.Log;
-import android.view.View;
-import android.widget.Button;
-import android.widget.ImageView;
-
-import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-public class Winter1Record extends AppCompatActivity {
-
+public class Autunno2 extends AppCompatActivity {
     private static final String LOG_TAG = "AudioRecordTest";
     String dateTime = new SimpleDateFormat("dd-MM-yyyy hh-mm-ss aa", Locale.getDefault()).format(new Date());
     private static final int REQUEST_RECORD_AUDIO_PERMISSION = 200;
     private static String fileName = null;
-TextToSpeech texttospeech;
+    TextToSpeech texttospeech;
     private Button recordButton = null;
     private MediaRecorder recorder = null;
-private String nome;
-    private String nome2;
-    private String nome3;
     private MediaPlayer player = null;
 
     // Requesting permission to RECORD_AUDIO
@@ -86,32 +78,22 @@ private String nome;
 
 
 
-
     @Override
-    public void onCreate(Bundle icicle) {
-        super.onCreate(icicle);
-
-        // Record to the external cache directory for visibility
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.gioco2autunno);
         fileName = getExternalCacheDir().getAbsolutePath();
         fileName += new StringBuilder().append("/audiorecordtest ").append(dateTime).append(".3gp").toString();
 
         ActivityCompat.requestPermissions(this, permissions, REQUEST_RECORD_AUDIO_PERMISSION);
-texttospeech=new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
-    @Override
-    public void onInit(int status) {
-        if(status==TextToSpeech.SUCCESS){
-           int language=texttospeech.setLanguage(Locale.ITALIAN);
-        }
-    }
-});
-
-        setContentView(R.layout.winterrecord1);
-        ImageView view=(ImageView)findViewById(R.id.imageView);
-
-        view.setImageResource(DatiIntent.getImage());
-        nome=DatiIntent.getText();
-            nome2=DatiIntent.getText1();
-            nome3=DatiIntent.getText2();
+        texttospeech=new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
+            @Override
+            public void onInit(int status) {
+                if(status==TextToSpeech.SUCCESS){
+                    int language=texttospeech.setLanguage(Locale.ITALIAN);
+                }
+            }
+        });
         recordButton =(Button)findViewById(R.id.record1winter);
         recordButton.setOnClickListener(new View.OnClickListener() {
             boolean mStartRecording = true;
@@ -126,8 +108,6 @@ texttospeech=new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitLi
             }
         });
     }
-
-
     @Override
     public void onStop() {
         super.onStop();
@@ -138,16 +118,9 @@ texttospeech=new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitLi
 
 
     }
-    public void avanti(View v){
-int speech=texttospeech.speak(nome,texttospeech.QUEUE_FLUSH,null);
+    public void riproduci(View v){
+        int speech=texttospeech.speak(DatiIntent.getgioco22(),texttospeech.QUEUE_FLUSH,null);
     }
-    public void avanti1(View v){
-        int speech=texttospeech.speak(nome2,texttospeech.QUEUE_FLUSH,null);
-    }
-    public void avanti2(View v){
-        int speech=texttospeech.speak(nome3,texttospeech.QUEUE_FLUSH,null);
-    }
-    public void back(View v){
-        startActivity(new Intent(Winter1Record.this,MainActivity.class));
-    }
-}
+public void back(View v){
+    startActivity(new Intent(Autunno2.this,MainActivity.class));
+}}

@@ -4,29 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background__summer_3">
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="405dp"
-        android:layout_height="157dp"
-        android:layout_marginStart="7dp"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="7dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView11"
-        app:srcCompat="@drawable/pngtreebuttons_games_button_illustration_6959952" />
+    android:background="@drawable/istockphoto_1135615577_170667a">
 
     <ImageView
         android:id="@+id/imageView8"
         android:layout_width="223dp"
         android:layout_height="143dp"
-        android:layout_marginEnd="6dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="144dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/pngtreebuttons_games_button_illustration_6959952" />
+        app:srcCompat="@drawable/blubutton" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="223dp"
+        android:layout_height="143dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/blubutton" />
 
     <ImageView
         android:id="@+id/imageView7"
@@ -35,7 +35,7 @@
         android:layout_marginStart="2dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView9"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/pngtreebuttons_games_button_illustration_6959952" />
+        app:srcCompat="@drawable/blubutton" />
 
     <ImageView
         android:id="@+id/imageView9"
@@ -44,7 +44,7 @@
         android:layout_marginStart="2dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView10"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/pngtreebuttons_games_button_illustration_6959952" />
+        app:srcCompat="@drawable/blubutton" />
 
     <ImageView
         android:id="@+id/imageView10"
@@ -54,37 +54,54 @@
         android:layout_marginBottom="27dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/pngtreebuttons_games_button_illustration_6959952" />
+        app:srcCompat="@drawable/blubutton" />
 
     <Button
         android:id="@+id/button10"
         style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="166dp"
-        android:layout_height="49dp"
+        android:layout_width="179dp"
+        android:layout_height="45dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="27dp"
         android:layout_marginEnd="21dp"
         android:layout_marginBottom="30dp"
         android:fontFamily="sans-serif-condensed"
         android:foregroundGravity="center_vertical|center|right"
-        android:onClick="back"
-        android:text="Prossimo Livello>"
-        android:textSize="14dp"
+        android:onClick="crea"
+        android:text="Crea"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView8"
         app:layout_constraintEnd_toEndOf="@+id/imageView8"
         app:layout_constraintStart_toStartOf="@+id/imageView8"
         app:layout_constraintTop_toTopOf="@+id/imageView8" />
 
     <Button
+        android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="164dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="sans-serif-condensed"
+        android:foregroundGravity="center_vertical|center|right"
+        android:onClick="Annulla"
+        android:text="Annulla"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:layout_constraintVertical_bias="0.035" />
+
+    <Button
         android:id="@+id/button11"
         style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="140dp"
+        android:layout_width="138dp"
         android:layout_height="38dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="12dp"
         android:fontFamily="sans-serif-condensed"
         android:foregroundGravity="center_vertical|center|right"
-        android:onClick="avanti"
         android:text="Aiuto1"
         android:textSize="16dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView7"
@@ -95,53 +112,37 @@
     <Button
         android:id="@+id/button12"
         style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="144dp"
+        android:layout_width="138dp"
         android:layout_height="38dp"
-        android:layout_marginTop="11dp"
-        android:layout_marginBottom="11dp"
         android:fontFamily="sans-serif-condensed"
         android:foregroundGravity="center_vertical|center|right"
-        android:onClick="avanti1"
-        android:text="Aiuto2"
+        android:text="Aiuto2  "
         android:textSize="16dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView9"
         app:layout_constraintEnd_toEndOf="@+id/imageView9"
-        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintHorizontal_bias="0.589"
         app:layout_constraintStart_toStartOf="@+id/imageView9"
-        app:layout_constraintTop_toTopOf="@+id/imageView9"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:layout_constraintVertical_bias="0.428" />
 
     <Button
         android:id="@+id/button14"
         style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="141dp"
-        android:layout_height="40dp"
+        android:layout_width="143dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="18dp"
         android:layout_marginTop="9dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginBottom="13dp"
         android:fontFamily="sans-serif-condensed"
         android:foregroundGravity="center_vertical|center|right"
-        android:onClick="avanti2"
         android:text="Aiuto3"
         android:textSize="16dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView10"
         app:layout_constraintEnd_toEndOf="@+id/imageView10"
-        app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="@+id/imageView10"
         app:layout_constraintTop_toTopOf="@+id/imageView10"
-        app:layout_constraintVertical_bias="0.75" />
-
-    <Button
-        android:id="@+id/record1winter"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="304dp"
-        android:layout_height="69dp"
-        android:fontFamily="sans-serif-condensed"
-        android:text="Registra"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
-        app:layout_constraintEnd_toEndOf="@+id/imageView6"
-        app:layout_constraintStart_toStartOf="@+id/imageView6"
-        app:layout_constraintTop_toTopOf="@+id/imageView6" />
+        app:layout_constraintVertical_bias="0.8" />
 
     <ImageView
         android:id="@+id/imageView11"
@@ -153,16 +154,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/screenshot_2023_12_26_180227" />
+        app:srcCompat="@drawable/blubutton" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="137dp"
-        android:layout_height="131dp"
+    <Button
+        android:id="@+id/button15"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="321dp"
+        android:layout_height="89dp"
+        android:onClick="pick"
+        android:text="Scegli Immagine"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView11"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView11"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="@+id/imageView11"
-        app:layout_constraintTop_toTopOf="@+id/imageView11"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintTop_toTopOf="@+id/imageView11" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

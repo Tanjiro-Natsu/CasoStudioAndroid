@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <Button
+        android:id="@+id/button1"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:text="Un animale che fa Bau-Bau" />
+    <Button
+        android:id="@+id/button2"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:text="ca" />
+    <Button
+        android:id="@+id/button3"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:text="ne" />
+    <Button
+        android:id="@+id/button4"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:text="Sta nella foresta" />
+    <Button
+        android:id="@+id/button5"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:text="alb" />
+    <Button
+        android:id="@+id/button6"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:text="ero" />
+    <Button
+        android:id="@+id/button7"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:text="si mangia le carote" />
+    <Button
+        android:id="@+id/button8"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:text="coni" />
+    <Button
+        android:id="@+id/button9"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:text="glio" />
+    <Button
+        android:id="@+id/button10"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:text="Torni dopo la scuola" />
+
+    <Button
+        android:id="@+id/button11"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:text="sa" />
+    <Button
+        android:id="@+id/button12"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:text="Nessun Aiuto" />
+
+
+</LinearLayout>

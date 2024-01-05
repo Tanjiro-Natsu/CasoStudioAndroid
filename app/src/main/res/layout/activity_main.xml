@@ -17,8 +17,8 @@
         android:layout_height="29dp"
         android:layout_weight="1"
         android:gravity="center|left"
-        android:onClick="autumnword"
-        android:text="Parole-Autunno" />
+        android:onClick="prova"
+        android:text="Prova" />
 
 
     <Button
@@ -28,8 +28,8 @@
         android:layout_height="29dp"
         android:layout_weight="1"
         android:gravity="center|left"
-        android:onClick="winterword"
-        android:text="Parole-Inverno" />
+        android:onClick="word"
+        android:text="ChooseWord" />
 
     <Button
         android:id="@+id/button3"
@@ -38,8 +38,26 @@
         android:layout_height="29dp"
         android:layout_weight="1"
         android:gravity="center|left"
-        android:onClick="summerword"
-        android:text="Parole-Estate" />
+        android:onClick="k1"
+        android:text="Inverno2" />
+    <Button
+        android:id="@+id/button31"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:layout_weight="1"
+        android:gravity="center|left"
+        android:onClick="k2"
+        android:text="Estate2" />
+    <Button
+        android:id="@+id/button32"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:layout_weight="1"
+        android:gravity="center|left"
+        android:onClick="k3"
+        android:text="Autunno2" />
     <Button
         android:id="@+id/button4"
         style="@style/Widget.AppCompat.Button.Colored"
@@ -47,26 +65,9 @@
         android:layout_height="29dp"
         android:layout_weight="1"
         android:gravity="center|left"
-        android:onClick="wintercolor"
-        android:text="Colori Inverno" />
-    <Button
-        android:id="@+id/button5"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="match_parent"
-        android:layout_height="29dp"
-        android:layout_weight="1"
-        android:gravity="center|left"
-        android:onClick="autumncolor"
-        android:text="Colori Autunno" />
-    <Button
-        android:id="@+id/button6"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="match_parent"
-        android:layout_height="29dp"
-        android:layout_weight="1"
-        android:gravity="center|left"
-        android:onClick="summercolor"
-        android:text="Colori Estate" />
+        android:onClick="prova1"
+        android:text="pulsante" />
+
     <Button
         android:id="@+id/button7"
         style="@style/Widget.AppCompat.Button.Colored"

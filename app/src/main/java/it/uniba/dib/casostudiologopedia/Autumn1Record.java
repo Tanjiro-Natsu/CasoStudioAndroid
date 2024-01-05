@@ -12,9 +12,11 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
+import android.speech.tts.TextToSpeech;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import java.io.File;
 import java.io.IOException;
@@ -28,10 +30,12 @@ public class Autumn1Record extends AppCompatActivity {
     String dateTime = new SimpleDateFormat("dd-MM-yyyy hh-mm-ss aa", Locale.getDefault()).format(new Date());
     private static final int REQUEST_RECORD_AUDIO_PERMISSION = 200;
     private static String fileName = null;
-
+    TextToSpeech texttospeech;
     private Button recordButton = null;
     private MediaRecorder recorder = null;
-
+    private String nome;
+    private String nome2;
+    private String nome3;
     private MediaPlayer player = null;
 
     // Requesting permission to RECORD_AUDIO
@@ -92,9 +96,22 @@ public class Autumn1Record extends AppCompatActivity {
         fileName += new StringBuilder().append("/audiorecordtest ").append(dateTime).append(".3gp").toString();
 
         ActivityCompat.requestPermissions(this, permissions, REQUEST_RECORD_AUDIO_PERMISSION);
+        texttospeech=new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
+            @Override
+            public void onInit(int status) {
+                if(status==TextToSpeech.SUCCESS){
+                    int language=texttospeech.setLanguage(Locale.ITALIAN);
+                }
+            }
+        });
 
         setContentView(R.layout.autumnrecord1);
-        recordButton =(Button)findViewById(R.id.button2);
+        ImageView view=(ImageView)findViewById(R.id.imageView);
+            view.setImageResource(DatiIntent.getImage2());
+        nome=DatiIntent.getText_2();
+        nome2=DatiIntent.getText1_2();
+        nome3=DatiIntent.getText2_2();
+        recordButton =(Button)findViewById(R.id.record1winter);
         recordButton.setOnClickListener(new View.OnClickListener() {
             boolean mStartRecording = true;
             public void onClick(View v) {
@@ -121,6 +138,15 @@ public class Autumn1Record extends AppCompatActivity {
 
     }
     public void avanti(View v){
-        startActivity(new Intent(Autumn1Record.this,Autumn2Record.class));
+        int speech=texttospeech.speak(nome,texttospeech.QUEUE_FLUSH,null);
+    }
+    public void avanti1(View v){
+        int speech=texttospeech.speak(nome2,texttospeech.QUEUE_FLUSH,null);
+    }
+    public void avanti2(View v){
+        int speech=texttospeech.speak(nome3,texttospeech.QUEUE_FLUSH,null);
+    }
+    public void back(View v){
+        startActivity(new Intent(Autumn1Record.this,MainActivity.class));
     }
 }
