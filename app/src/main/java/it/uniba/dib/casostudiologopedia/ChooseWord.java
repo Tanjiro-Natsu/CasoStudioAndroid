@@ -1,11 +1,16 @@
 package it.uniba.dib.casostudiologopedia;
 
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.content.Intent;
+
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import java.util.ArrayList;
 
@@ -18,6 +23,8 @@ public class ChooseWord extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.chooseword);
+        Toolbar toolbar=(Toolbar)findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
         Integer [] lista={R.id.button1,R.id.button2,R.id.button3,R.id.button4,R.id.button5,R.id.button6,R.id.button7,R.id.button8,R.id.button9,R.id.button10,R.id.button11,R.id.button12,R.id.button13,R.id.button14,R.id.button15,R.id.button16,R.id.button17,R.id.button18};
        RadioButton [] buttoni=new RadioButton[18];
        for(int i=0;i<18;i++){
@@ -49,7 +56,7 @@ public class ChooseWord extends AppCompatActivity {
        }
     }
 
-    public void ok(View w){
+    public void ok(){
         switch(DatiIntent.getcounter1()){
             case 1:{
                 DatiIntent.setgioco2(stringa1+"  "+stringa2+"   "+stringa3);
@@ -66,5 +73,20 @@ public class ChooseWord extends AppCompatActivity {
         }
 
         startActivity(new Intent(ChooseWord.this,creaesercizio2.class));
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.toolbar,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int id=item.getItemId();
+if(id==R.id.item){
+    ok();
+}
+        return true;
     }
 }

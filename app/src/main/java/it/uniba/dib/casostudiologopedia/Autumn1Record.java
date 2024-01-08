@@ -1,7 +1,6 @@
 package it.uniba.dib.casostudiologopedia;
 
 import android.Manifest;
-import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.media.MediaPlayer;
@@ -18,7 +17,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -106,7 +104,7 @@ public class Autumn1Record extends AppCompatActivity {
         });
 
         setContentView(R.layout.autumnrecord1);
-        ImageView view=(ImageView)findViewById(R.id.imageView);
+        ImageView view=(ImageView)findViewById(R.id.imageView99);
             view.setImageResource(DatiIntent.getImage2());
         nome=DatiIntent.getText_2();
         nome2=DatiIntent.getText1_2();

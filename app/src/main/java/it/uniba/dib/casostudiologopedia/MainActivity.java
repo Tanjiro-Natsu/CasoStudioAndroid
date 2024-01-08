@@ -19,6 +19,9 @@ public class MainActivity extends AppCompatActivity {
     public void prova(View v){
         startActivity(new Intent(MainActivity.this,creaesercizio1.class));
     }
+    public void prova1(View v){
+        startActivity(new Intent(MainActivity.this,creagioco3.class));
+    }
     public void WinterRecord(View v){
         startActivity(new Intent(MainActivity.this,Winter1Record.class));
     }
@@ -39,6 +42,9 @@ public class MainActivity extends AppCompatActivity {
     }
     public void k3(View v){
         startActivity(new Intent(MainActivity.this,Autunno2.class));
+    }
+    public void Inverno3(View v){
+        startActivity(new Intent(MainActivity.this,Inverno3.class));
     }
 
 

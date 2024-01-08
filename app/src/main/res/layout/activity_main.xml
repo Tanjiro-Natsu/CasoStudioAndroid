@@ -18,7 +18,7 @@
         android:layout_weight="1"
         android:gravity="center|left"
         android:onClick="prova"
-        android:text="Prova" />
+        android:text="CreaGioco1" />
 
 
     <Button
@@ -29,7 +29,16 @@
         android:layout_weight="1"
         android:gravity="center|left"
         android:onClick="word"
-        android:text="ChooseWord" />
+        android:text="CreaGioco2" />
+    <Button
+        android:id="@+id/button4"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:layout_weight="1"
+        android:gravity="center|left"
+        android:onClick="prova1"
+        android:text="CreaGioco3" />
 
     <Button
         android:id="@+id/button3"
@@ -58,15 +67,7 @@
         android:gravity="center|left"
         android:onClick="k3"
         android:text="Autunno2" />
-    <Button
-        android:id="@+id/button4"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="match_parent"
-        android:layout_height="29dp"
-        android:layout_weight="1"
-        android:gravity="center|left"
-        android:onClick="prova1"
-        android:text="pulsante" />
+
 
     <Button
         android:id="@+id/button7"
@@ -95,6 +96,15 @@
         android:gravity="center|left"
         android:onClick="AutumnRecord"
         android:text="Record-Autunno" />
+    <Button
+        android:id="@+id/button90"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:layout_weight="1"
+        android:gravity="center|left"
+        android:onClick="Inverno3"
+        android:text="Inverno3" />
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
