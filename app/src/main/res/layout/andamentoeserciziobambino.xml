@@ -1,0 +1,206 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadingEdge="vertical|none"
+    app:barrierMargin="?attr/listPreferredItemPaddingEnd">
+
+
+    <LinearLayout
+        android:id="@+id/ciao"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/material_dynamic_neutral_variant30"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:title="Denominazione Immagine"
+            app:titleTextColor="@color/white" />
+
+        <TextView
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-condensed-light" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="202dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="Immagine selezionata:"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textSize="24sp"
+                    android:background="@drawable/border"
+                    />
+
+                <ImageView
+                    android:id="@+id/imageView27"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    app:srcCompat="@drawable/ok1" />
+            </TableRow>
+            <TextView
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-condensed-light" />
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="202dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:gravity="center"
+                    android:text="Aiuto1"
+                    android:background="@drawable/border"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/aiuto1"
+                    android:layout_width="202dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            </TableRow>            <TextView
+                android:id="@+id/line5"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-condensed-light" />
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="202dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="Aiuto2"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textSize="24sp"
+                    android:background="@drawable/border"/>
+
+                <TextView
+                    android:id="@+id/aiuto2"
+                    android:layout_width="202dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+            </TableRow>
+            <TextView
+                android:id="@+id/line3"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-condensed-light" />
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="202dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="Aiuto3"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textSize="24sp"
+                    android:background="@drawable/border"/>
+
+                <TextView
+                    android:id="@+id/aiuto3"
+                    android:layout_width="202dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+
+            </TableRow>
+            <TextView
+                android:id="@+id/line10"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-condensed-light" />
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="364dp"
+                    android:layout_height="52dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:gravity="center"
+                    android:text="Andamento Esercizio"
+                    android:textAlignment="center"
+                    android:textSize="24sp"
+                    android:background="@drawable/border"/>
+
+                <ImageView
+                    android:id="@+id/imageView28"
+                    android:layout_width="165dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    tools:srcCompat="@drawable/border" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+
+
+
+</ScrollView>
+
+

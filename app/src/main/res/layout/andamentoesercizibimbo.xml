@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/material_dynamic_neutral_variant30"
+        android:gravity="center">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:layout_weight="1"
+        android:background="@color/material_dynamic_neutral_variant30"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="Esercizi"
+        app:titleTextColor="@color/white" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"></TextView>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button190"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Denominazione immagini 1 "
+            android:textColor="@color/white"
+            app:strokeColor="@color/white"
+            app:strokeWidth="1dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button191"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Denominazione immagini 2 "
+            android:textColor="@color/white"
+            app:strokeColor="@color/white"
+            app:strokeWidth="1dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button192"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Denominazione immagini 3"
+            android:textColor="@color/white"
+            app:strokeColor="@color/white"
+            app:strokeWidth="1dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"></TextView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button1931"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="k1"
+        android:text=" Ripetizione  sequenze di parole 1"
+        android:textColor="@color/white"
+        app:strokeColor="@color/white"
+        app:strokeWidth="1dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button1941"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Ripetizione  sequenze di parole 2"
+        android:textColor="@color/white"
+        android:onClick="k2"
+        app:strokeColor="@color/white"
+        app:strokeWidth="1dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button1951"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Ripetizione  sequenze di parole 3"
+            android:textColor="@color/white"
+            android:onClick="k3"
+            app:strokeColor="@color/white"
+            app:strokeWidth="1dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"></TextView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button193"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Riconoscimento immagine 1"
+        android:onClick="k4"
+        android:textColor="@color/white"
+        app:strokeColor="@color/white"
+        app:strokeWidth="1dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button194"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Riconoscimento immagine 2"
+        android:textColor="@color/white"
+        app:strokeColor="@color/white"
+        app:strokeWidth="1dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button195"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Riconoscimento immagine 3"
+        android:textColor="@color/white"
+        app:strokeColor="@color/white"
+        app:strokeWidth="1dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"></TextView>
+
+    </LinearLayout>
+
+
+

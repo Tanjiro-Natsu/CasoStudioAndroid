@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_dynamic_neutral_variant30">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button23"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="159dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="18dp"
+        android:text="Imposta"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button190"
+        app:strokeColor="@color/white"
+        app:strokeWidth="1dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button28"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="159dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="16dp"
+        android:text="crea"
+        android:onClick="crea"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText2"
+        app:strokeColor="@color/white"
+        app:strokeWidth="1dp" />
+
+    <TextView
+        android:id="@+id/NomeBambino"
+        android:layout_width="159dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="Nome Bambino"
+        android:textColor="@color/material_dynamic_neutral_variant30"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/material_dynamic_neutral_variant30"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Crea Appuntamento"
+        app:titleTextColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="159dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="58dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="Nome Bambino"
+        android:textColor="@color/material_dynamic_neutral_variant30"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button190"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="159dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="18dp"
+        android:onClick="AddCalendarEvent"
+        android:text="imposta"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Eta"
+        app:strokeColor="@color/white"
+        app:strokeWidth="1dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="159dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="Annota Appuntamento"
+        android:textColor="@color/material_dynamic_neutral_variant30"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="159dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="55dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="Data paziente"
+        android:textColor="@color/material_dynamic_neutral_variant30"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="159dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="Eta"
+        android:textColor="@color/material_dynamic_neutral_variant30"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/Eta"
+        android:layout_width="159dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="18dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="Eta"
+        android:textColor="@color/material_dynamic_neutral_variant30"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NomeBambino" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="357dp"
+        android:layout_height="146dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="148dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Note...."
+        android:textColor="@color/material_dynamic_neutral_variant30"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

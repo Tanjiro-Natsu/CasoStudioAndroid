@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "317575945002",
+    "firebase_url": "https://logopedista-6dd88-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "logopedista-6dd88",
+    "storage_bucket": "logopedista-6dd88.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:317575945002:android:42e8a0c8283320ca3d5c53",
+        "android_client_info": {
+          "package_name": "it.uniba.dib.casostudiologopedia"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJQABw7BkI36yNsjKuKeH-itMTgNz5FQE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,31 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadingEdge="vertical|none"
+    app:barrierMargin="?attr/listPreferredItemPaddingEnd"
+    android:background="@color/material_dynamic_neutral_variant30">
+
+    <LinearLayout
+        android:id="@+id/ciao"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/material_dynamic_neutral_variant30"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/material_dynamic_neutral_variant30"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:title="Lista Pazienti"
+            app:titleTextColor="@color/white" />
+
+
+    </LinearLayout>
+
+</ScrollView>

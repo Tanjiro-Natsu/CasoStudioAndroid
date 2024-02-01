@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pngtree_cartoon_concise_fashion_baby_products_image_46269"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="500dp"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <ImageView
+                    android:id="@+id/imageView31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="220dp"
+                    app:srcCompat="@drawable/abc_773228" />
+                <EditText
+                    android:id="@+id/login_email"
+                    android:layout_width="350dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/lavander_borrder"
+
+                    android:drawablePadding="8dp"
+                    android:hint="Email"
+                    android:padding="8dp" />
+
+                <EditText
+                    android:id="@+id/login_password"
+                    android:layout_width="350dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/lavander_borrder"
+
+                    android:drawablePadding="8dp"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="8dp" />
+
+                <Button
+                    android:id="@+id/salva"
+                    style="@style/Widget.Material3.ExtendedFloatingActionButton.Secondary"
+                    android:layout_width="350dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Login"
+                    android:textSize="25sp"
+                    app:cornerRadius="30dp"
+                    app:rippleColor="@color/purple_500"
+                    app:strokeColor="@color/purple_200"
+                    app:strokeWidth="3dp" />
+                <Button
+                    android:id="@+id/back"
+                    style="@style/Widget.Material3.ExtendedFloatingActionButton.Secondary"
+                    android:layout_width="350dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Annulla"
+                    android:onClick="back"
+                    android:textSize="25sp"
+                    app:cornerRadius="30dp"
+                    app:rippleColor="@color/purple_500"
+                    app:strokeColor="@color/purple_200"
+                    app:strokeWidth="3dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logopedista"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lavender"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="Registra Paziente"
+        app:titleTextColor="@color/white" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/lavander_borrder"
+        android:drawablePadding="8dp"
+        android:hint="Email"
+        android:layout_gravity="center"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/nome"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/lavander_borrder"
+        android:drawablePadding="8dp"
+        android:hint="Nome"
+
+        android:layout_gravity="center"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/cognome"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/lavander_borrder"
+        android:drawablePadding="8dp"
+        android:hint="Cognome"
+        android:layout_gravity="center"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/eta"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/lavander_borrder"
+        android:drawablePadding="8dp"
+        android:layout_gravity="center"
+        android:hint="Eta"
+        android:padding="8dp" />
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/lavander_borrder"
+        android:drawablePadding="8dp"
+        android:hint="Password"
+        android:layout_gravity="center"
+        android:inputType="textPassword"
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/signup_button"
+        style="@style/Widget.Material3.ExtendedFloatingActionButton.Secondary"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:text="Registra Paziente"
+        android:textSize="25sp"
+        app:cornerRadius="30dp"
+        app:rippleColor="@color/purple_500"
+        app:strokeColor="@color/lavender"
+        android:layout_gravity="center"
+        app:strokeWidth="3dp" />
+
+
+</LinearLayout>

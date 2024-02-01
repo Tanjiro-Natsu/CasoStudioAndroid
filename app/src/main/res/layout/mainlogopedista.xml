@@ -1,0 +1,108 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_dynamic_neutral_variant30">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/material_dynamic_neutral_variant30"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:titleTextColor="@color/white"
+            app:popupTheme="@style/ToolbarTheme"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+
+        <Button
+            android:id="@+id/creagioco"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_weight="1"
+            android:elevation="30dp"
+            android:foreground="@drawable/logomap1"
+            android:onClick="crea"
+            android:text="Button" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+        <Button
+            android:id="@+id/registrapaziente"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_weight="1"
+            android:elevation="30dp"
+            android:foreground="@drawable/_01668278_con_l_illustrazione_di_vettore_di_stile_del_fumetto_del_carattere_del_tovagliolo_del_menu"
+            android:onClick="registra"
+            android:text="Button" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+        <Button
+            android:id="@+id/correzioni"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_weight="1"
+            android:onClick="correzione"
+            android:foreground="@drawable/_02044410_illustrazione_di_un_bambino_che_fa_i_compiti_alla_scrivania"
+            android:text="Button" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+        <Button
+            android:id="@+id/punteggio"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_weight="1"
+            android:onClick="punteggio"
+            android:foreground="@drawable/cartoni1"
+            android:text="Button" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+        <Button
+            android:id="@+id/calendario"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_weight="1"
+            android:foreground="@drawable/cale"
+            android:onClick="calendario"
+            android:text="Button" />
+
+
+    </LinearLayout>
+</ScrollView>

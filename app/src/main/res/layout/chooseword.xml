@@ -1,0 +1,189 @@
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/design_default_color_secondary_variant"
+            android:minHeight="?attr/actionBarSize"
+            app:title="Scegli 3 Parole"
+            app:titleTextColor="@color/white"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+        <RadioButton
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/cardview_default_radius"
+            android:text="Tasso"
+            android:textSize="20dp"
+            android:textColor="#000" />
+        <RadioButton
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/cardview_default_radius"
+            android:text="Masso"
+            android:textSize="20dp"
+            android:textColor="#000" />
+        <RadioButton
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/cardview_default_radius"
+            android:text="Spasso"
+            android:textSize="20dp"
+            android:textColor="#000" />
+        <RadioButton
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/cardview_default_radius"
+            android:text="Matto"
+            android:textSize="20dp"
+            android:textColor="#000" />
+        <RadioButton
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/cardview_default_radius"
+            android:text="Gatto"
+            android:textSize="20dp"
+            android:textColor="#000" />
+        <RadioButton
+            android:id="@+id/button6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/cardview_default_radius"
+            android:text="Atto"
+            android:textSize="20dp"
+            android:textColor="#000" />
+        <RadioButton
+            android:id="@+id/button7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/cardview_default_radius"
+            android:text="Lana"
+            android:textSize="20dp"
+            android:textColor="#000" />
+        <RadioButton
+            android:id="@+id/button8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/cardview_default_radius"
+            android:text="Rana"
+            android:textSize="20dp"
+            android:textColor="#000" />
+        <RadioButton
+            android:id="@+id/button9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/cardview_default_radius"
+            android:text="Liana"
+            android:textSize="20dp"
+            android:textColor="#000" />
+        <RadioButton
+            android:id="@+id/button10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/cardview_default_radius"
+            android:text="Folla"
+            android:textSize="20dp"
+            android:textColor="#000" />
+        <RadioButton
+            android:id="@+id/button11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/cardview_default_radius"
+            android:text="Colla"
+            android:textSize="20dp"
+            android:textColor="#000" />
+        <RadioButton
+            android:id="@+id/button12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/cardview_default_radius"
+            android:text="Molla"
+            android:textSize="20dp"
+            android:textColor="#000" />
+        <RadioButton
+            android:id="@+id/button13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/cardview_default_radius"
+            android:text="Sacco"
+            android:textSize="20dp"
+            android:textColor="#000" />
+        <RadioButton
+            android:id="@+id/button14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/cardview_default_radius"
+            android:text="Pacco"
+            android:textSize="20dp"
+            android:textColor="#000" />
+        <RadioButton
+            android:id="@+id/button15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/cardview_default_radius"
+            android:text="Scacco"
+            android:textSize="20dp"
+            android:textColor="#000" />
+        <RadioButton
+            android:id="@+id/button16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/cardview_default_radius"
+            android:text="Caso"
+            android:textSize="20dp"
+            android:textColor="#000" />
+        <RadioButton
+            android:id="@+id/button17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/cardview_default_radius"
+            android:text="Vaso"
+            android:textSize="20dp"
+            android:textColor="#000" />
+        <RadioButton
+            android:id="@+id/button18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/cardview_default_radius"
+            android:text="Naso"
+            android:textSize="20dp"
+            android:textColor="#000" />
+    </LinearLayout>
+</ScrollView>
+
